@@ -80,7 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('-w', '--weights', type=str, default='model/yolov3.weights', help='Path to model weights')
     parser.add_argument('-cfg', '--config', type=str, default='model/yolov3.cfg', help='Path to configuration file')
     parser.add_argument('-l', '--labels', type=str, default='model/coco.names', help='Path to label file')
-    parser.add_argument('-c', '--confidence', type=float, default=0.1, help='Minimum confidence for a box to be detected.')
+    parser.add_argument('-c', '--confidence', type=float, default=0.5, help='Minimum confidence for a box to be detected.')
     parser.add_argument('-t', '--threshold', type=float, default=0.4, help='Threshold for Non-Max Suppression')
     parser.add_argument('-u', '--use_gpu', default=False, action='store_true', help='Use GPU (OpenCV must be compiled for GPU). For more info checkout: https://www.pyimagesearch.com/2020/02/03/how-to-use-opencvs-dnn-module-with-nvidia-gpus-cuda-and-cudnn/')
     parser.add_argument('-s', '--save', default=False, action='store_true', help='Whether or not the output should be saved')
